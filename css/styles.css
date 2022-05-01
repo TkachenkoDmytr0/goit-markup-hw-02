@@ -13,6 +13,9 @@ font-family: 'Raleway',
 sans-serif;
 color: #212121;
 background-color:#FFFFFF;}
+ul{list-style: none;}
+
+
 /*nav*/
 .header-link:hover,
 .header-link:focus,
@@ -24,6 +27,7 @@ background-color:#FFFFFF;}
 .footer-link:focus {
     color: var(--bt-nav-cl);
 }
+
 /*header*/
 
 .header-logo{
@@ -32,8 +36,8 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-
 color:#000000}
+
 .logo-cl{color: #2196F3 }
 
 .header-link,
