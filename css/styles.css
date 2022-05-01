@@ -11,12 +11,15 @@
 --bt-cl: #2196F3;
 --bt-cl-secondary:#188CE8;
 --team-background-cl:#F5F4FA;
+--footer-link-cl: rgba(255, 255, 255, 0.6);
 
 }
 body
 {font-family: 'Roboto';
 color: var(--text-black-cl);
 background-color: var(--background-cl-body);
+font-size: 14px;
+letter-spacing: 0.03em;
 }
 .list {
     list-style: none;
@@ -68,7 +71,6 @@ color: var(--logo-secondary-cl)}
 .header-link-contact{
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14 ;
     letter-spacing: 0.02em;
     color: var(--black-cl);
@@ -116,27 +118,22 @@ background: var(--bt-cl-secondary);
 /*особенности*/
 .peculiarities-name{
 font-weight: 700;
-font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-black-cl);
 }
 .peculiarities-text{
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--paragraf-color);
+line-height: 1.17;
+color: var(--paragraf-color);
 }
 /*публикация работ*/
 .work-title,
 .team-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-black-cl)
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--text-black-cl)
 }
 /*команда*/
 .team{
@@ -147,14 +144,12 @@ color: var(--text-black-cl);
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-black-cl);
 }
 .team-text{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--paragraf-color);
 }
 /*footer*/
@@ -165,7 +160,6 @@ color: var(--text-black-cl);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--background-cl-body);
 }
 .logo-cl{
@@ -174,18 +168,14 @@ color: var(--text-black-cl);
 .footer-link{
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
 color: var(--background-cl-body);
 }
 .footer-link-contact{
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
 line-height: 1,71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--footer-link-cl);
 }
 /*портфолио*/
 .servise-bt{
@@ -193,7 +183,6 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1,6;
     text-align: center;
-    letter-spacing: 0.03em;
     background: var(--team-background-cl);
     border-radius: 4px;
     color: var(--text-black-cl);
@@ -220,6 +209,5 @@ color: var(--text-black-cl)
 font-family: 'Roboto';
 font-size: 16px;
 line-height: 1.8;
-letter-spacing: 0.03em;
 color: var(--paragraf-color);
 }
