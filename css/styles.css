@@ -69,7 +69,6 @@ color: var(--logo-secondary-cl)}
 
 .header-link,
 .header-link-contact{
-    font-family: 'Roboto';
     font-weight: 500;
     line-height: 1.14 ;
     letter-spacing: 0.02em;
