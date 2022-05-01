@@ -1,19 +1,43 @@
 :root{
+--font-roboto:'Roboto';
 --text-black-cl:#212121;
 --text-white-cl:#FFFFFF;
 --bt-nav-cl: #2196F3;
 --paragraf-color: #757575;
---font-roboto:'Roboto';
+--background-cl-body: #FFFFFF;
+--logo-cl:#2196F3;
+--logo-secondary-cl:#000000;
+--hero-background-cl: #2F303A;
+--bt-cl: #2196F3;
+--bt-cl-secondary:#188CE8;
+--team-background-cl:#F5F4FA;
 
 }
 body
-{font-family: 'Roboto',
-sans-serif;
-font-family: 'Raleway',
-sans-serif;
-color: #212121;
-background-color:#FFFFFF;}
-ul{list-style: none;}
+{font-family: 'Roboto';
+color: var(--text-black-cl);
+background-color: var(--background-cl-body);
+}
+.list {
+    list-style: none;
+}
+.link{
+ text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 
 /*nav*/
@@ -36,9 +60,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color:#000000}
+color: var(--logo-secondary-cl)}
 
-.logo-cl{color: #2196F3 }
+.logo-cl{color: var(--logo-cl) }
 
 .header-link,
 .header-link-contact{
@@ -50,16 +74,17 @@ color:#000000}
     color: var(--black-cl);
 }
 .header-link-contact{
-    color:#757575;
+    color: var(--paragraf-color);
+}
+.accent{
+    color: var(--bt-nav-cl);
 }
 
 /*СЕКЦИЯ ГЕРОЙ*/
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-background-cl);
 }
 .hero-title {
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -69,10 +94,8 @@ text-transform: uppercase;
 color: var(--text-white-cl);}
 
 .hero-bt{
-background-color: #2196F3;
+background-color: var(--bt-cl);
 cursor: pointer;
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.8;
@@ -87,24 +110,19 @@ color: var(--text-white-cl);
 }
 .hero-bt:hover,
 .hero-bt:focus{
-background: #188CE8;
-
-
+background: var(--bt-cl-secondary); 
 }
 
 /*особенности*/
 .peculiarities-name{
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
-line-height: 1.14px;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-black-cl);
 }
 .peculiarities-text{
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -113,8 +131,6 @@ color: var(--text-black-cl);
 /*публикация работ*/
 .work-title,
 .team-title{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -124,11 +140,9 @@ color: var(--text-black-cl);
 }
 /*команда*/
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--team-background-cl);
 }
 .team-name{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -137,7 +151,6 @@ color: var(--text-black-cl);
     color: var(--text-black-cl);
 }
 .team-text{
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -146,48 +159,42 @@ color: var(--text-black-cl);
 }
 /*footer*/
 .footer{
-    background-color:#2F303A;
+    background-color: var(--hero-background-cl);
 }
 .footer-logo{
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:#FFFFFF;
+    color: var(--background-cl-body);
 }
 .logo-cl{
-    color: #2196F3;
+    color: var(--logo-cl);
 }
 .footer-link{
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
+line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--background-cl-body);
 }
 .footer-link-contact{
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
+line-height: 1,71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 /*портфолио*/
 .servise-bt{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1,6;
     text-align: center;
     letter-spacing: 0.03em;
-    background: #F5F4FA;
+    background: var(--team-background-cl);
     border-radius: 4px;
     color: var(--text-black-cl);
     cursor: pointer;
@@ -198,13 +205,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 0px 1px 2px rgba(0, 0, 0, 0.08),
 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
-background: #2196F3;
+background: var(--bt-cl);
 }
 /*портфолио*/
 
 .projects-title{
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
