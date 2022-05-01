@@ -1,5 +1,5 @@
 :root{
---font-roboto:'Roboto';
+--font-roboto:'Roboto',sans-serif;
 --text-black-cl:#212121;
 --text-white-cl:#FFFFFF;
 --bt-nav-cl: #2196F3;
@@ -15,7 +15,7 @@
 
 }
 body
-{font-family: 'Roboto';
+{font-family:'Roboto', sans-serif;
 color: var(--text-black-cl);
 background-color: var(--background-cl-body);
 font-size: 14px;
